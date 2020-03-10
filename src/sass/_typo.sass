@@ -1,8 +1,31 @@
-small
-  font-size: inherit
-
-h1, h2, h3, h4, h5, h6
-  font-weight: 400
-
 .title
-  +css-lock(21, 45, 320, 1399, font-size)
+  display: block
+  text-transform: uppercase
+  font-weight: 700
+  line-height: 1
+
+  &--h1
+    font-size: em(50)
+    +sm
+      font-size: em(26, $base-fz-sm)
+
+
+  &--h2
+    font-size: em(28)
+
+.list
+  font-weight: 700
+  margin-right: rem(-60)
+  +xl
+    margin-right: rem(-40)
+
+  &__item
+    display: flex
+    align-items: center
+    +notlast
+      margin-bottom: rem(10)
+
+  &__icon
+    margin-left: em(35)
+    +xl
+      margin-left: em(15)

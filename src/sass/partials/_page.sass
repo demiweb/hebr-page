@@ -1,0 +1,149 @@
+.page
+  display: flex
+  flex-wrap: wrap
+
+  padding-left: rem(140)
+  padding-right: rem(80)
+
+  +xxl
+    padding-left: rem(30)
+    padding-right: rem(30)
+  +lg
+    padding-left: rem(20)
+    padding-right: rem(20)
+    padding-top: rem(50)
+
+  &__img
+    width: percentage(620 / 1110)
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+
+    +xl
+      width: 45%
+
+    +lg
+      display: none
+
+  &__right
+    display: flex
+
+    width: percentage(1265 / 1690)
+    padding-left: rem(145)
+    padding-top: rem(95)
+
+    +xl
+      width: 65%
+      padding-left: rem(15)
+
+    +lg
+      width: 100%
+      padding-top: 0
+
+  &__img-mob
+    +lgmin
+      display: none
+
+  &__content
+    position: relative
+    width: percentage((1110 - 620) / 1110)
+
+    padding-right: rem(60)
+    padding-top: rem(50)
+    padding-bottom: rem(35)    
+
+    +before
+      width: 1em
+      height: 1em
+      font-size: rem(115)
+
+      border: 9px solid #404041
+      border-left: 0
+      border-bottom: 0
+
+      position: absolute
+      top: 0
+      right: 0
+
+    +xl
+      width: 55%
+      padding-right: rem(40)
+
+    +lg
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 500px
+
+      padding-top: rem(20)
+      padding-bottom: rem(20)
+      +before
+        font-size: rem(55)
+        border-width: 4px
+
+  &__content-in
+    +lg
+      order: 1
+
+  &__form
+    width: percentage((1690 - 1265) / 1690)
+    background-color: $dark
+
+    padding-top: rem(95) + rem(50)
+    padding-bottom: rem(50)
+    padding-left: rem(35)
+    padding-right: rem(35)
+
+    +xl
+      width: 35%
+
+    +lg
+      width: 100%
+      padding-top: rem(50)
+
+  &__title
+    color: $accent
+    margin-bottom: rem(10)
+
+  &__subttl
+    font-size: em(25)
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: rem(15)
+    +sm
+      font-size: em(16, $base-fz-sm)
+
+  &__text, &__label, &__list
+    +notlast
+      margin-bottom: rem(20)
+
+  &__logo
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 210px
+    margin-top: rem(35)
+
+    +lg
+      display: none
+
+  &__logo-mob
+    display: flex
+    justify-content: center
+    align-items: center
+
+    margin-bottom: rem(35)
+
+    width: 100%
+
+    +lgmin
+      display: none
+
+    .logo
+      margin-left: rem(50)
+
+
+  &__phone
+    display: inline-block
+    +lgmin
+      display: none

@@ -1,0 +1,48 @@
+{%set
+fields = [
+  { placeholder: 'שם מלא' },
+  { placeholder: 'שם החברה/עסק' },
+  { placeholder: 'דוא״ל' },
+  { placeholder: 'טלפון' },
+  { placeholder: 'איזור בארץ' },
+  { placeholder: 'הערות' }
+]
+%}
+
+<form class="page__form form">
+  <h2 class="form__title">מלא פרטייך ונחזור בהקדם:</h2>
+
+  {% for i in fields %}
+  <div class="form__field">
+    {{ mixins.input(
+      name = 'input',
+      mod = '',
+      type = 'text',
+      placeholder = i.placeholder,
+      value = '',
+      fieldClass = '',
+      label = i.label
+    ) }}
+  </div>
+  {% endfor %}
+
+  <div class="form__field form__checkbox">
+    {{ mixins.input(
+      name = 'checkbox',
+      mod = '',
+      type = 'checkbox',
+      placeholder = '',
+      value = '',
+      fieldClass = '',
+      label = { last: '<span>אני מאשר/ת קבלת דיוור </span>' }
+    ) }}
+  </div>
+
+  <div class="form__field">
+    {{ mixins.btn(
+      title = 'שליחה',
+      mod = '',
+      href = false
+    ) }}
+  </div>
+</form>

@@ -1,8 +1,8 @@
 html  
   font-size: $base-fz + px
-  line-height: 1.4
+  line-height: 1.35
   color: $c-text
-  +reg
+  font-family: 'Assistant', sans-serif
   +sm
     font-size: $base-fz-sm + px
 
@@ -20,4 +20,24 @@ body
   $this: &
   &--loaded:not(#{$this}--no-fade-in)
     animation: fadeIn 1s
+
+
+.label
+  display: inline-block
+  background-color: $accent
+
+  font-weight: 700
+  font-size: em(25)
+  text-transform: uppercase
+
+  padding: 0 .3em 0 .5em
+
+  +sm
+    font-size: em(16, $base-fz-sm)
+
+.logo
+  display: inline-block
+  font-size: 0
+  +lg
+    width: 150px
     

@@ -4,5 +4,66 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-  {% include "partials/_hero.html" %}
+  
+  <!-- begin page -->
+  <section class="page">
+    <div class="page__logo-mob">
+      <a href="/" class=" logo">
+        <img class="js-lazy" alt="" src="" data-src="./img/logo.png"/>
+      </a>
+
+      <a href="#" class="page__phone"><i class="ic ic--phone"></i></a>
+    </div>
+
+    <div class="page__right">
+      <div class="page__img">
+        <img class="js-lazy" alt="" src="" data-src="./img/Image.png"/>
+      </div>
+
+
+      <div class="page__content">
+        <div class="page__content-in">
+          <h1 class="page__title title title--h1">מעוף סופרים בשבילך!</h1>
+
+          <div class="page__subttl">ספירות מלאי לפי קטלוג או לפי איתור בחנות 
+  אחת או ברשת ארצית</div>
+
+          <div class="page__text">
+            מעוף שירותים מנוהלים בעלת ניסיון רב בפרויקטים נרחבים של ספירות וניהול מלאי ברשתות אופנה, מרכזים לוגיסטיים, חברות קמעונאיות ועוד. שירותים אלו כוללים: ארגון ותפעול מערך האחסון, ביצוע ספירות מלאי באמצעות מסופוני אנדרואיד מתקדמים, ניהול המלאי, הזנת נתונים למערכות המחשוב השונות, הבטחת סדרי בטיחות וגהות, בקרה ופיקוח על המלאי וזאת על פי צרכי הלקוחות.
+
+          </div>
+
+          <div class="page__label label">השירות כולל:</div>
+
+          <ul class="page__list list">
+            <li class="list__item"><i class="ic ic--check list__icon"></i>גיוסי כוח - אדם Inhouse</li>
+            <li class="list__item"><i class="ic ic--check list__icon"></i>צוות ותיק ומיומן בתחום</li>
+            <li class="list__item"><i class="ic ic--check list__icon"></i>גמישות תפעולית: זמן קצר, מספר אתרים במקביל</li>
+            <li class="list__item"><i class="ic ic--check list__icon"></i>תיעוד נתונים באמצעות מסופונים מתקדמים</li>
+            <li class="list__item"><i class="ic ic--check list__icon"></i>תהליכי בקרה לדיווח מהימן</li>
+            <li class="list__item"><i class="ic ic--check list__icon"></i>הפקת דוחות בהתאמה אישית</li>
+          </ul>
+
+          <div class="page__text">
+            לקוחות החברה זוכים ללווי צמוד על ידי מנהל הפרויקט וראשי הצוותים העובדים באמצעות תהליכי בקרה והבטחת איכות נוקשים, תדריכי בטיחות, נהלי עבודה ברורים והפקת דוחות אקסל לפי דרישת הלקוח. כמו כן, מעוף הינה חברה בפריסה ארצית רחבה ובעלת יכולות לתת מענה לספירות מלאי באתרים מרובים, ובכמויות פריטים גבוהות.
+          </div>
+        </div>
+        
+        <div class="page__logo">
+          <a href="/" class=" logo">
+            <img class="js-lazy" alt="" src="" data-src="./img/logo.png"/>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    {% include "partials/_form.html" %}
+
+    <div class="page__img-mob">
+      <img class="js-lazy" alt="" src="" data-src="./img/Image.png"/>
+    </div>
+  </section>
+  <!-- end page -->
+
 {% endblock %}
