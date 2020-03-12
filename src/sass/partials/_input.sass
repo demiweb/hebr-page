@@ -18,7 +18,18 @@
     input[type="checkbox"]
       opacity: 0
       visibility: hidden
-      position: absolute
+      position: absolute      
+      & + span
+        &::before
+          content: ''
+          border: 1px solid $white
+          width: .9em
+          height: .9em
+          top: .3em
+          right: 0
+          background-color: transparent
+          position: absolute
+          display: block
       &:checked + span
         &::after
           content: ''
@@ -27,15 +38,3 @@
           right: .15em
           position: absolute
           display: block
-    span
-      &::before
-        content: ''
-        border: 1px solid $white
-        width: .9em
-        height: .9em
-        top: .3em
-        right: 0
-        background-color: transparent
-        position: absolute
-        display: block
-
